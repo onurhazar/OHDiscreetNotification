@@ -1,7 +1,7 @@
 # OHDiscreetNotification
 A discreet notification view written in C#
 
-![Demo](https://github.com/onurhazar/OHDiscreetNotification/blob/master/OHToggle.png)
+![Demo](https://github.com/onurhazar/OHDiscreetNotification/blob/master/screenshot.png)
 
 ## Requirements
 iOS 13+
