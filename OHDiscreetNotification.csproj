@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0-ios</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <CreatePackage>false</CreatePackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <CreatePackage>false</CreatePackage>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Sample\obj\Debug\net7.0-ios\iossimulator-x64\actool\bundle\AppIcon60x60%402x.png" />
+    <None Remove="Sample\obj\Debug\net7.0-ios\iossimulator-x64\actool\bundle\AppIcon76x76%402x~ipad.png" />
+    <None Remove="Sample\bin\Debug\net7.0-ios\iossimulator-x64\Sample.runtimeconfig.json" />
+    <None Remove="Sample\bin\Debug\net7.0-ios\iossimulator-x64\Sample.app\AppIcon60x60%402x.png" />
+    <None Remove="Sample\bin\Debug\net7.0-ios\iossimulator-x64\Sample.app\AppIcon76x76%402x~ipad.png" />
+    <None Remove="Sample\bin\Debug\net7.0-ios\iossimulator-x64\Sample.app\Settings.bundle\Root.plist" />
+    <None Remove="screenshot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Sample\obj\Debug\net7.0-ios\iossimulator-x64\actool\bundle\AppIcon60x60%402x.png" />
+    <BundleResource Include="Sample\obj\Debug\net7.0-ios\iossimulator-x64\actool\bundle\AppIcon76x76%402x~ipad.png" />
+    <BundleResource Include="Sample\bin\Debug\net7.0-ios\iossimulator-x64\Sample.runtimeconfig.json" />
+    <BundleResource Include="Sample\bin\Debug\net7.0-ios\iossimulator-x64\Sample.app\AppIcon60x60%402x.png" />
+    <BundleResource Include="Sample\bin\Debug\net7.0-ios\iossimulator-x64\Sample.app\AppIcon76x76%402x~ipad.png" />
+    <BundleResource Include="Sample\bin\Debug\net7.0-ios\iossimulator-x64\Sample.app\Settings.bundle\Root.plist" />
+    <BundleResource Include="screenshot.png" />
+  </ItemGroup>
+</Project>
